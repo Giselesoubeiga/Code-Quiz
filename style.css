@@ -1,0 +1,23 @@
+.Container{
+    max-width: 300px;
+margin: 0 auto;
+}
+.start-game{
+    background: yellow;
+    width: 50%;
+}
+.game-questions{
+    background: blue;
+    width: 50%;
+}
+.game-score{
+    background: cyan;
+    width: 50%;
+    
+}
+.game-control{
+    background: blueviolet;
+    width: 50%;
+
+}
+
