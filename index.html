@@ -10,33 +10,36 @@
    
 </head>
 <body>
-    <header class="col-12">
-        <div id="highScoresLink">
-            <a href="scores.html">High Scores</a>
-        </div>
-        <div id="timerTag" style="margin-left: 85%">Time:</div>
-        <div id="timer">
+    <div class="container d-flex justify-content-center mt-5">
+        <div class="game-box col-lg-8 p-4">
+            <div class="row pb-4">
+                <div class="col-lg-4">
+                    <button class="btn btn-outline-primary">Hight Score</button>
+                </div>
+                <div class="col-lg-4"></div>
 
-        </div>
-    </header>
+                <div class="col-lg-4">
+                    <h4 class="float-right text-primary">Timer :10</h4>
 
-    <div class="Container col-xs-12 col-md-6 col-lg-8">
-        <div class="start-game">
-            <h1>Start Game</h1>
-        </div>
-        <div class="game-questions">
-            <h1>Game Question</h1>
-        </div>
-        <div class="game-score">
-            <h1>Game Score</h1>
-        </div>
-        <div class="game-control">
-            <h1>Game control</h1>
-        </div>
+                </div>
+            </div>
+            <div class="quiz-questions d-none" id="quiz-questions">
+                <h3 class="text-primary text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                <div class="answers mt-5 mb-5">
+                    <button class="btn-primary btn-block text-left">Lorem ipsum dolor sit.</button>
+                    <button class="btn-primary btn-block text-left">Lorem ipsum dolor sit.</button>
+                    <button class="btn-primary btn-block text-left">Lorem ipsum dolor sit.</button>
+                    <button class="btn-primary btn-block text-left">Lorem ipsum dolor sit.</button>
+                </div>
+                
+            </div>
+            <div class="btnstart d-flex justify-content-center mt-4"> 
+                <button class="btn btn-primary btn-lg" id="btn-start">Start Quiz</button>
 
+            </div>
+        </div>
     </div>
-   
-</body>
+    </body>
 
-<script src="script.js"></script>
+<script src="scrypt.js"></script>
 </html>

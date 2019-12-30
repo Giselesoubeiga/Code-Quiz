@@ -1,23 +1,10 @@
-.Container{
-    max-width: 300px;
-margin: 0 auto;
+.game-box{
+    background: #eeeeee;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0.,0,0,0.23);
 }
-.start-game{
-    background: yellow;
-    width: 50%;
+.answer-item{
+    background: white;
+    width: 90%;
+    display: inline-block;
+    padding: 3px;
 }
-.game-questions{
-    background: blue;
-    width: 50%;
-}
-.game-score{
-    background: cyan;
-    width: 50%;
-    
-}
-.game-control{
-    background: blueviolet;
-    width: 50%;
-
-}
-
