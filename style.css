@@ -1,10 +1,26 @@
+
+body,html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+   background-image: url(images/weather.png);
+   height: 100%;
+}
 .game-box{
     background: #eeeeee;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0.,0,0,0.23);
 }
 .answer-item{
-    background: white;
+    background: rgb(223, 201, 7);
     width: 90%;
     display: inline-block;
+    border-radius:8px;
     padding: 3px;
+}
+#btn-start{
+    border:none;
+	padding:6px 0 6px 0;
+	border-radius:8px;
+	background:#1645c7;
+    font:bold 40px;
+	color:#fff;
 }
