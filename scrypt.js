@@ -5,13 +5,14 @@ var timecounter = document.getElementById("timecounter");
 var titleitem = document.getElementById("title-item");
 var nextQuestions 
 var questionanswers = document.getElementById("question-answers");
+var myScore = document.getElementById("score");
 var currentindex = 0;
 var score = 0;
 var count = 75;
 var alert =document.getElementById("alert");
 var info = document.getElementById("info");
-var addscore = document.getElementById("addscore");
-var submitresult = document.getElementById("submitresult");
+// var addscore = document.getElementById("addscore");
+// var submitresult = document.getElementById("submitresult");
 var allScores = [];
 var storageScore = JSON.parse(localStorage.getItem("userData"));
 var questions = [
@@ -23,12 +24,12 @@ var questions = [
     {
         title: "The condition in an if/else statement is enclosed within:---",
         choices: ["quotes","Curly brackets","parentheses", "square brackets"],
-        answer : "square brackets"    
+        answer : "parentheses"    
     },
     {
         title: "Arrays in JavaScript can be used to store:---",
         choices: ["numbers and strings","others Arrays","booleances", "all of the above"],
-        answer : "numbers and strings"    
+        answer : "all of the above"    
     },
     {
         title: "String values must be enclosed within --- when being assigned to variables ",
@@ -43,6 +44,9 @@ var questions = [
 ]
 btnStart.addEventListener("click", starQuiz);
 function starQuiz(){
+    // if(storedScores !==null) {
+    //     allScores = storedScores;
+    // }
     info.classList.add("d-none")
     btnStart.classList.add("d-none")
     timecounter.classList.remove("d-none")
@@ -54,9 +58,9 @@ function starQuiz(){
 
     gametime()
 }
-submitResult.addEventListener("click", function (){
-    console.log("hello")
-});
+// // submitResult.addEventListener("click", function (){
+// //     console.log("hello")
+// });
 
 // Time set
 
@@ -135,7 +139,9 @@ function correction(response){
 
 }
  function endgame (){
-    btnStart.classList.add("d-none")
+    // btnStart.classList.add("d-none")
+    myScore.innaText = count
+    addscore.classList.remove("d-none")
     timecounter.classList.add("d-none")
     quizQuestions.classList.add("d-none")
     addscore.classList.remove("d-none")
