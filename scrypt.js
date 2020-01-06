@@ -6,6 +6,7 @@ var titleitem = document.getElementById("title-item");
 var nextQuestions 
 var questionanswers = document.getElementById("question-answers");
 var myScore = document.getElementById("score");
+var btnScore = document.getElementById("btnScore");
 var currentindex = 0;
 var score = 0;
 var count = 75;
@@ -14,7 +15,7 @@ var info = document.getElementById("info");
 // var addscore = document.getElementById("addscore");
 // var submitresult = document.getElementById("submitresult");
 var allScores = [];
-var storageScore = JSON.parse(localStorage.getItem("userData"));
+var storedScores = JSON.parse(localStorage.getItem("userData"));
 var questions = [
     {
         title: "Commonly used data type Do Not include:---",
@@ -44,9 +45,9 @@ var questions = [
 ]
 btnStart.addEventListener("click", starQuiz);
 function starQuiz(){
-    // if(storedScores !==null) {
-    //     allScores = storedScores;
-    // }
+    if(storedScores !==null) {
+        allScores = storedScores;
+    }
     info.classList.add("d-none")
     btnStart.classList.add("d-none")
     timecounter.classList.remove("d-none")
@@ -58,10 +59,10 @@ function starQuiz(){
 
     gametime()
 }
-// // submitResult.addEventListener("click", function (){
-// //     console.log("hello")
-// });
-
+btnScore.addEventListener("click" , function(){
+    let name = document.getElementById("inputScore").value
+    scorePage(name, count)
+});
 // Time set
 
 function gametime(){

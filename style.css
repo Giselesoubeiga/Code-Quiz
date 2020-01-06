@@ -24,3 +24,9 @@ body,html{
     font:bold 40px;
 	color:#fff;
 }
+#code {
+	color: rgb(5, 15, 105);
+    font-size: 30px;
+    text-align: center;
+   
+}
