@@ -2,7 +2,7 @@
 body,html{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    background-image: url(images/weather.png);
+    background-image: url(Images/weather.png);
     height: 100%;
 }
 .game-box{
@@ -24,12 +24,8 @@ body,html{
     font:bold 40px;
 	color:#fff;
 }
-#code {
-	color: rgb(5, 15, 105);
-    font-size: 30px;
-    text-align: center;
-   
-}
+
 #code-title{
     text-align: center;
+    font-weight: bold;
 }
