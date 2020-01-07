@@ -2,7 +2,7 @@
 Please visit the deployed project at: https://giselesoubeiga.github.io/Code-Quiz/
 
 <hr>
-<h1>Description<h1>
+Description
 
 The purpose of this assignment was to create a timer-based coding assessment using vanilla JavaScript that behaves like so:
 
@@ -10,3 +10,4 @@ The application has a few multiple choice questions and the ability to store top
 
 At the end of the quiz (when the user answers all questions or time is up), upon viewing their score, the user is able to enter their initials to add their score to the High Scores list. Once they enter their initials, the scoreboard will appear with an option to clear the board or restart the quiz.
 
+![GitHub Logo](images/weather.png)

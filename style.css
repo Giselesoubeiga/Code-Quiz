@@ -1,9 +1,9 @@
 
 body,html{
     font-family: Georgia, 'Times New Roman', Times, serif;
-  
-   background-image: url(images/weather.png);
-   height: 100%;
+    text-align: center;
+    background-image: url(images/weather.png);
+    height: 100%;
 }
 .game-box{
     background: #eeeeee;
@@ -29,4 +29,7 @@ body,html{
     font-size: 30px;
     text-align: center;
    
+}
+#code-title{
+    text-align: center;
 }
