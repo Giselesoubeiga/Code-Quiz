@@ -69,7 +69,7 @@ function gametime(){
 
     var timeinterval = setInterval(function(){
         timer.innerText = count
-         count
+         count--;
         }, 1000);
 
 }
